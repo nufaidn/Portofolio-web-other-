@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+
+        <a href="#" class="logo">Portofolio</a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Beranda -->
+    <section id="beranda">
+        <div class="container">
+            <h1>Selamat Datang di Portfolio Saya</h1>
+            <p>Hi!, I'm Nufail</p>
+            <p>Web Developer</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/nufaidnsolo/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nufail-student-new-89664b31b/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nufaidn" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="cv-button">
+                <a href="image/CV.jpg" class="btn"  target="_blank">Lihat CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="about">
+        <div class="container">
+            <h2>About me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="image/bersama.jpg" alt="Profile Picture" 
+                         onerror="this.src='https://via.placeholder.com/300x300'" 
+                         loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>I am a web developer, I studied for 3 years at IDN Boarding School Solo to become a web developer. I have expertise in HTML, CSS, JavaScript, and PHP. </p>
+                    <p>Education:</p>
+                    <ul>
+                        <li>SMK IDN Boarding School Solo</li>
+                    </ul>
+                    <p>Skills:</p>
+                    <ul>
+                        <li>Front-end Development (HTML, CSS, JavaScript)</li>
+                        <li>Back-end Development (PHP, MySQL)</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio Saya</h2>
+            <div class="portfolio-items">
+                <div class="item">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img 
+                            src="image/Task.png" 
+                            alt="Task Manager Project"
+                            onerror="this.src=''"
+                            loading="lazy"
+                            onload="this.classList.add('loaded')"
+                        >
+                        <div class="image-overlay">
+                            <h4>Task Manager Project</h4>
+                            <p>Click untuk detail lebih lanjut</p>
+                        </div>
+                    </div>
+                    <h3>Task Manager "TaskMaster"</h3>
+                    <p>Aplikasi manajemen tugas dengan fitur:</p>
+                    <ul>
+                        <li>Kanban board</li>
+                        <li>Task prioritization</li>
+                        <li>Team collaboration</li>
+                        <li>File attachment</li>
+                        <li>Progress reporting</li>
+                    </ul>
+                    <p class="tech-stack">Teknologi: Vue.js, Firebase</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="btn-small">Live Demo</a>
+                        <a href="https://github.com/nufaidn/List-.git" class="btn-small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> nufaidnsolo@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +62 859-2205-3573</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="nama" placeholder=" ">
+                        <label for="nama">Nama Anda</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder=" ">
+                        <label for="email">Email Anda</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea id="pesan" placeholder=" "></textarea>
+                        <label for="pesan">Pesan Anda</label>
+                    </div>
+                    
+                    <button type="submit">KIRIM PESAN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio</p>
+    </footer>
+</body>
+</html> 
